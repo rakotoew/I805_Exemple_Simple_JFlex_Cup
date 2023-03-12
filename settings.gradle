@@ -1,1 +1,15 @@
 //rootProject.name = 'I703_Exemple_Simple'
+
+pluginManagement {
+    repositories {
+        maven {
+          url 'https://gitlab.com/api/v4/projects/35519225/packages/maven'
+        }
+        gradlePluginPortal()
+    }
+    plugins {
+        id 'org.hvb.java-cup' version "0.1.0-alpha1-SNAPSHOT"
+        //id "org.xbib.gradle.plugin.jflex" version "1.7.1"
+    }
+}
+
