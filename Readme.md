@@ -12,7 +12,7 @@ est utilisé pour la génération de l'analyseur lexical.
 
 ## Analyseur lexical
 
-La spécification de l'analyseur lexical est dans le fichier [src/main/jflex/Simple.flex](src/main/jflex/Simple.flex).
+La spécification de l'analyseur lexical est dans le fichier [src/main/jflex/Simple.jflex](src/main/jflex/Simple.jflex).
 
 Il permet de reconnaître un **sujet** (_il_ ou _elle_), 
 un **verbe** (_est_ ou _boit_), un **complément** 
