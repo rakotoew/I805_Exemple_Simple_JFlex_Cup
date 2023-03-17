@@ -34,18 +34,19 @@ parser code {:
     }
 :};
 
+
  init with {:
 
 :};
 
 // Symboles terminaux
-terminal NOMBRE, PLUS, MINUS, TIMES, DIVIDE, ESPACE, FIN;
-terminal ERREUR;
+terminal NUMBER, PLUS, MINUS, TIMES, DIVIDE, SPACE, END;
+terminal ERROR;
 
 // Symboles non terminaux
 nonterminal expression;
 
 // Grammaire
-expression ::= NOMBRE PLUS NOMBRE FIN {: System.out.println("Addition reconnue"); :}
-               |
-               erreur FIN {: System.out.println("Ce n'est pas une addition"); :};
+expression ::= NUMBER PLUS NUMBER {: System.out.println("Addition reconnue"); :} END
+             | error END {: System.out.println("Ce n'est pas une addition"); :}
+               ;

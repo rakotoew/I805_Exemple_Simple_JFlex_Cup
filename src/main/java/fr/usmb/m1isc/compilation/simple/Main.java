@@ -12,9 +12,16 @@ public class Main {
             lexer = new SimpleLexer(new InputStreamReader(System.in));
         @SuppressWarnings("deprecation")
         SimpleParser p = new SimpleParser(lexer);
-        p.parse();*/
-
+        p.parse();
+        */
         ArithmetiquesLexer aLexer;
+        if (args.length > 0)
+            aLexer = new ArithmetiquesLexer(new FileReader(args[0]));
+        else
+            aLexer = new ArithmetiquesLexer(new InputStreamReader(System.in));
+        @SuppressWarnings("deprecation")
+        ArithmetiquesParser aParser = new ArithmetiquesParser(aLexer);
+        aParser.parse();
 
 
     }
